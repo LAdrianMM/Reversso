@@ -1,0 +1,8 @@
+export { default as back } from './back.png'
+export { default as iconApple } from './icon-apple.png'
+export { default as iconFacebook } from './icon-facebook.png'
+export { default as iconGoogle } from './icon-google.png'
+export { default as positiveImage } from './logo.png'
+export { default as view } from './view.png'
+export { default as sunImage } from './vector.png'
+export { default as iconClose } from './icon-close.png'

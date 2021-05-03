@@ -1,70 +1,47 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Prueba técnica: Reversso
 
-## Available Scripts
+En este archivo encontrarán una pequeña guía para la correcta descarga y el funcionamiento de la página, explicando a detalle cada sección.
 
-In the project directory, you can run:
+## Descargar y descomprimir la carpeta
 
-### `yarn start`
+## Se recomienda tener una versión de Node (v14.16.0) que es la ultima LTS (Long Term Support), con esta versión de node incluye una versión de npm (v6.14.11)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `cd Reversso`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Posicionate en el directorio raíz desde una consola y ejecuta el comando "npm install" para instalar las dependencias del proyecto.
 
-### `yarn test`
+### `npm run start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Levanta la página web hecha en react.
 
-### `yarn build`
+## Detalles de lo realizado
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### General
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para la realización de esta prueba se utilizó el framework React Js y según los requerimientos se especifican las dependencias mínimas para instalarlo. Además se utiliza Styled-Components para el CSS. En la raíz del proyecto hay una carpeta llamada "imagenes" donde se encuentran las capturas de pantallas de como se visualiza el proyecto en mi computador. Además todas las vistas están conectadas según se detalla más adelante.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Desktop
 
-### `yarn eject`
+Iniciando por la vista en desktop que según figma es de las dimenciones (w: 1440 y h: 900).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+En el home se encuentra el formulario de inicio de sesión del lado derecho, el cual en la parte inferior se encuentra un link para redireccionar al componente de crear cuenta, al darle click renderiza dicho componente sin recargar la página y manteniendose en la misma url, de esta manera se renderiza solo el componente que cambia y no toda la página, asi tenemos mejor performance y rendimiento.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+El componente de crear usuario contiene un botón, el cual si presionamos nos redireccionará de nuevo a la pantalla de inicio con un mensaje que indica que nos hemos registro con éxito, además en la parte inferior encontramos un link que nos devolverá a la pantalla inicial sin dicho mensaje.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Mobile
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Pasando a la vista mobile que según figma es de las dimenciones (w: 375 y h: 812)
 
-## Learn More
+En el home se encuentrán dos botones y un link. 
+    El botón "Iniciar Sesión" nos redireccionará a la página para iniciar sesión, en este caso nos redirecciona a la url "/signin" sin recargar la página.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    El segundo botón nos abrirá un popup con las opciones de iniciar sesión con otras cuentas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Y por ultimo el link para crear una cuenta nos redireccionará a la url "/signup" sin recargar la página
 
-### Code Splitting
+En la página de iniciar sesión se encuentra un botón para volver al home, además de un botón para iniciar sesión con otras cuentas que abre el mismo popup anterior y un link para redireccionar a la pantalla de crear una cuenta
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+En la vista de crear cuenta también se encuentra un botón para volver al home, un botón que redireccionará a la página para iniciar sesión con un mensaje indicando que se ha registrado con éxito, además se encuentra el botón para registrarse con otras cuentas y un link que redireccionará a la pantalla de iniciar sesión sin el mensaje.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+En la vista mobile, sí cambia de url para mantener todas páginas en una sola vista sin tener que hacer scroll. Se recomienda que si se va a pasar del tamaño mobile al tamaño desktop, sea desde el home, de esta manera renderizará la vista desktop de una manera optima.
