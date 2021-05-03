@@ -34,11 +34,11 @@ El componente de crear usuario contiene un botón, el cual si presionamos nos re
 Pasando a la vista mobile que según figma es de las dimenciones (w: 375 y h: 812)
 
 En el home se encuentrán dos botones y un link. 
-    El botón "Iniciar Sesión" nos redireccionará a la página para iniciar sesión, en este caso nos redirecciona a la url "/signin" sin recargar la página.
+El botón "Iniciar Sesión" nos redireccionará a la página para iniciar sesión, en este caso nos redirecciona a la url "/signin" sin recargar la página.
 
-    El segundo botón nos abrirá un popup con las opciones de iniciar sesión con otras cuentas
+El segundo botón nos abrirá un popup con las opciones de iniciar sesión con otras cuentas
 
-    Y por ultimo el link para crear una cuenta nos redireccionará a la url "/signup" sin recargar la página
+Y por ultimo el link para crear una cuenta nos redireccionará a la url "/signup" sin recargar la página
 
 En la página de iniciar sesión se encuentra un botón para volver al home, además de un botón para iniciar sesión con otras cuentas que abre el mismo popup anterior y un link para redireccionar a la pantalla de crear una cuenta
 
