@@ -7,7 +7,7 @@ En este archivo encontrarán una pequeña guía para la correcta descarga y el f
 
 ## Se recomienda tener una versión de Node (v14.16.0) que es la ultima LTS (Long Term Support), con esta versión de node incluye una versión de npm (v6.14.11)
 
-### `cd Reversso`
+### `cd Reversso-master`
 
 Posicionate en el directorio raíz desde una consola y ejecuta el comando "npm install" para instalar las dependencias del proyecto.
 
@@ -33,7 +33,8 @@ El componente de crear usuario contiene un botón, el cual si presionamos nos re
 
 Pasando a la vista mobile que según figma es de las dimenciones (w: 375 y h: 812)
 
-En el home se encuentrán dos botones y un link. 
+En el home se encuentrán dos botones y un link.
+ 
 El botón "Iniciar Sesión" nos redireccionará a la página para iniciar sesión, en este caso nos redirecciona a la url "/signin" sin recargar la página.
 
 El segundo botón nos abrirá un popup con las opciones de iniciar sesión con otras cuentas
